@@ -11,6 +11,7 @@
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <a href = "#contactus">Contact Us</a>
     </div>
 
     <!-- background info about company -->
@@ -23,7 +24,7 @@
     <h2>Stats</h2>
     <div class="stats-container">
         <div class="stats-card">
-            <h3>Individual Contributions</h3>
+            <h3>Individual Contributions</h3> 
             <p id="num-contributions">
             </p>
         </div>
@@ -42,7 +43,7 @@
         <div class="stats-card" id="first-game">
             <h3>🥇 Top Funded Game</h3>
         </div>
-        <div class="stats-card" id="second-game">
+        <div class="stats-card" id="second-game"> 
             <h3>🥈 Runner Up</h3>
         </div>
     </div>
@@ -58,6 +59,50 @@
     <div id="games-container">
 
     </div>
+
+    <br>
+    <hr style="color: black; height: 4px;">
+    <br>
+
+    <a name="contactus">
+        <form method="post" oninput="fn.value = firstname.value + ' ' + lastname.value">
+            <fieldset>
+              <legend>Personal</legend>
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" />
+              <br />
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" />
+              <br />
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" />
+              </fieldset>
+            <fieldset>
+              <legend>Questions</legend>
+              <p>How did you hear about us?</p>
+              <select name="found" id="found">
+                  <option value="social">Social Media</option>
+                  <option value="TV" selected>TV</option>
+                  <option value="Adverstisements">Advertisements</option>
+                  <option value="Google">Google</option>
+                  <option value="Other">Other</option>
+              </select>
+            <p>What genre of video games are you most interested in?</p>
+            <input list="genres" name="genre" />
+            <datalist id="genres">
+              <option value="Adventure"></option>
+              <option value="Action"></option>
+              <option value="Role-playing game"></option>
+              <option value="Fighting"></option>
+            </datalist>
+              </fieldset>
+            
+              <p>Add comments below</p>
+              <textarea name="comments" rows="6" cols="50" maxlength="255"></textarea>
+              <input type="submit" name="submitform" value="Send it" /> <br />
+              <output name="fn"></output>
+          </form>
+    </a>
 
     <script type="module" src="index.js"></script>
   </body>
