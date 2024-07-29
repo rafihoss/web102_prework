@@ -100,7 +100,7 @@ addGamesToPage(unfundedGames);
 console.log(unfundedGames.length);
 }
 
-// show only games that are fully funded
+// show only games that are fully  funded
 function filterFundedOnly() {
     deleteChildElements(gamesContainer);
 

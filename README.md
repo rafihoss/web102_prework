@@ -36,7 +36,7 @@ GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Notes
 
-I struggled with the portion where I had to add data about each ga,e as a card to the game-container. I was not familiar with the template literals tool, and also had to brush up on the usage of loops. 
+I struggled with the portion where I had to add data about each game as a card to the game-container. I was not familiar with the template literals tool, and also had to brush up on the usage of loops. 
 The part where I felt more comfortable in was when I used the arrow functions, reduce, and filter methods. 
 
 ## License
